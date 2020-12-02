@@ -4,6 +4,7 @@ pub mod helpers;
 use std::env;
 
 use exercises::ex01::ex01;
+use exercises::ex02::ex02;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -14,9 +15,10 @@ fn main() {
         match args[1].parse::<u32>() {
             Ok(n) => match n {
                 1 => ex01(),
-                _ => println!("This exercise does not exist")
+                2 => ex02(),
+                _ => println!("This exercise does not exist"),
             },
-            _ => println!("Error reading exercise number")
+            _ => println!("Error reading exercise number"),
         }
     }
 }
