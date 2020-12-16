@@ -17,6 +17,7 @@ use exercises::ex11::ex11;
 use exercises::ex12::ex12;
 use exercises::ex13::ex13;
 use exercises::ex14::ex14;
+use exercises::ex15::ex15;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -40,6 +41,7 @@ fn main() {
                 12 => ex12(),
                 13 => ex13(),
                 14 => ex14(),
+                15 => ex15(),
                 _ => println!("This exercise does not exist"),
             },
             _ => println!("Error reading exercise number"),
